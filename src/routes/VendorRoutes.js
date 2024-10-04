@@ -1,6 +1,7 @@
 import Dashboard from "../views/Vendor/VendorDashboard.js";
 import ProductList from "../views/Vendor/ProductManagemnt.js";
-import TableList from "../views/TableList.js";
+import OrderList from "../views/Vendor/OrderManagement.js";
+//import TableList from "../views/TableList.js";
 // import UserProfile from "../views/UserProfile.js";
 
 var routes = [
@@ -20,6 +21,7 @@ var routes = [
   // },
   {
     path: "/products/:vendorId",
+    path: "/orders/:vendorId",
     name: "Product Management",
     icon: "tim-icons icon-components",
     component: <ProductList />,
@@ -32,11 +34,14 @@ var routes = [
   //   component: <TableList />,
   //   layout: "/vendor",
   // },
+  
   {
-    path: "/products/:vendorId",
+    //path: "/products/:vendorId",
+    path: "/orders/:vendorId",
     name: "Order Management",
     icon: "tim-icons icon-delivery-fast",
-    component: <TableList />,
+    //component: <TableList />,
+    component: <OrderList />,
     layout: "/vendor",
   },
 ];
