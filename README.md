@@ -1,1 +1,1 @@
-# EADProject_Frontend
+# EAD Project FrontEnd Section
