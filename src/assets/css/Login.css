@@ -1,9 +1,9 @@
-.login-card {
+/* .login-card {
   max-width: 400px;
-  margin: auto;
-  padding: 20px;
+  margin: 0%;
+  padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(86, 67, 182, 0.1);
+  box-shadow: 0 0 10px rgba(66, 188, 113, 0.1);
 }
 
 input {
@@ -12,4 +12,159 @@ input {
 
 .alert {
   margin-bottom: 15px;
+} */
+/* General Body Styling */
+
+
+
+/* General Body Styling */
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Page Container Styling */
+.login-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+  background: #1b9270;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-content h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.welcome-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Login Card Styling */
+.login-card {
+  padding: 40px;
+  border-radius: 15px;
+  background: #c8c2c2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+  right: 10px;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.login-card h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.login-card p {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* Input Fields Styling */
+input {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #1b9270;
+  box-shadow: 0 0 8px rgba(255, 175, 0, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+.login-btn {
+  background-color: #ffaf00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #e69b00;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert Message Styling */
+.alert {
+  margin-bottom: 20px;
+  color: #d9534f;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Forgot Password Link Styling */
+.forgot-password-link {
+  color: #1b9270;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    position: static;
+  }
+  .welcome-section {
+    padding: 30px;
+  }
+  .login-card {
+    position: static;
+    max-width: 100%;
+    margin: 20px;
+  }
 }
